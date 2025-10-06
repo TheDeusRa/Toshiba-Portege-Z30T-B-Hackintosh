@@ -107,6 +107,13 @@ For smoother and more natural **scrolling behavior**, you can also install
 This EFI is provided for educational and experimental purposes only.  
 Use at your own risk – the author is not responsible for any system damage or data loss.
 
+#### 💰 Crypto Donations  
+
+If you’d like to support my projects directly, you can donate via crypto:  
+**BTC:** `bc1q9923r0f892lyd7sqf2j82xax03gpf58sntnwjs`  
+**ETH:** `0x906cE31A56fb88ba202aed514CD7F36098e70A18`  
+**SOL:** `BUFJ1oyx55taCvYSvVoE2xoYyHTgTSAAAKYTapJfJg53`
+
 ## 🙌 Credits
 
 - [acidanthera](https://github.com/acidanthera) for OpenCore and kexts  
