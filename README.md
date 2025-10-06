@@ -13,7 +13,7 @@ The goal is to provide a stable and compatible OpenCore setup for macOS Monterey
 |------------|----------------|
 | Laptop | Toshiba Portege Z30T-B |
 | CPU | Intel Core i7-5500U (2C/4T, Broadwell-U) |
-| GPU | Intel HD5500 |
+| GPU | Intel(R) HD Graphics 5500 (2 GB) |
 | RAM | 8–16 GB DDR3L |
 | Storage | SATA / NVMe SSD (both supported) |
 | Wi-Fi + Bluetooth | Intel (Itlwm + IntelBluetoothFirmware) |
