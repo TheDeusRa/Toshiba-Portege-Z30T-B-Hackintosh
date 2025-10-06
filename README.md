@@ -87,7 +87,7 @@ ComboJack enables proper headset detection and mic functionality on Realtek code
 
 ## 🧰 OpenCore Configuration
 
-- **OpenCore Version:** 1.0.5  
+- **OpenCore Version:** 1.0.2 
 - **SMBIOS:** `MacBookAir7,1`  
   _(generate your own serial numbers with `macserial`)_
 - **boot-args:**
