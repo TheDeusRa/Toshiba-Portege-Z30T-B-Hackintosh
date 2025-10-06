@@ -45,12 +45,14 @@ The goal is to provide a stable and compatible OpenCore setup for macOS Monterey
 
 ---
 
-## 🎧 Audio Jack Notice
+### 🎧 Audio Jack & Scrolling Enhancements
 
-If you want the **3.5 mm headphone jack** to work correctly (with automatic switching between speakers and headphones),  
-you need to install **[ComboJack](https://github.com/hackintosh-stuff/ComboJack)** after macOS installation.  
+If you need the **3.5 mm headphone jack** to work correctly (auto-switch between speakers and headphones),  
+install **[ComboJack](https://github.com/hackintosh-stuff/ComboJack)** after macOS installation.  
+ComboJack enables proper headset detection and microphone support on Realtek audio codecs.
 
-ComboJack enables proper headset detection and mic functionality on Realtek codecs.
+For smoother and more natural **scrolling behavior**, you can also install  
+**[Discrete Scroll](https://github.com/emreyolcu/discrete-scroll)** — a lightweight tool that improves touchpad and mouse scroll responsiveness on macOS.
 
 ---
 
