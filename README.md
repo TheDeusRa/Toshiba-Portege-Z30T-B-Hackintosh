@@ -2,7 +2,7 @@
 
 <img width="1920" height="1392" alt="macOS Toshiba Portege Z30TB" src="https://github.com/user-attachments/assets/4c0ec948-d5b6-4f20-b17b-3f67cfc845f1" />
 
-This repository contains a fully working EFI configuration for **Toshiba Portege Z30T-B** with **Intel Core i7-5500U (Broadwell-U)** and **Intel HD5500** graphics.  
+This repository contains a fully working EFI configuration for **Toshiba Portege Z30T-B** with **Intel Core i7-5500U (Broadwell-U)** and **Intel HD 5500** graphics.  
 The goal is to provide a stable and compatible OpenCore setup for macOS Monterey.
 
 ---
@@ -75,19 +75,20 @@ For smoother and more natural **scrolling behavior**, you can also install
 
 ## 🧩 ACPI Tables
 
-- `SSDT-EC-USBX` – EC and USB power injection  
-- `SSDT-GPRW` – fixes wake signal  
-- `SSDT-PNLF` – backlight support  
-- `SSDT-SLPB` – sleep button fix  
-- `SSDT-OC-XOSI` – Windows ACPI compatibility  
-- `SSDT-HPET` – IRQ fix  
-- `SSDT-PTSWAK` – proper sleep/wake handling  
+- `SSDT-AC.aml` – general ACPI fixes (wake, power, sleep integration)
+- `SSDT-EC-USBX.aml` – adds Embedded Controller device and USB power properties  
+- `SSDT-GPRW.aml` – fixes sleep/wake methods (_GPRW)  
+- `SSDT-HPET.aml` – IRQ conflicts fix for High Precision Event Timer  
+- `SSDT-OC-XOSI.aml` – improves OSI compatibility for macOS  
+- `SSDT-PNLF.aml` – enables display backlight control  
+- `SSDT-PTSWAK.aml` – proper sleep/wake flow handling  
+- `SSDT-SLPB.aml` – fixes sleep button behavior  
 
 ---
 
 ## 🧰 OpenCore Configuration
 
-- **OpenCore Version:** 1.0.2 
+- **OpenCore Version:** 1.0.5 (Newest) 
 - **SMBIOS:** `MacBookAir7,1`  
   _(generate your own serial numbers with `macserial`)_
 - **boot-args:**
