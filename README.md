@@ -1,7 +1,6 @@
-# Toshiba Portege Z30T-B Hackintosh (macOS OpenCore EFI)
+# Toshiba Portege Z30T-B (OpenCore EFI)
 
-<img width="1920" height="1392" alt="macOS Toshiba Portege Z30T-B" src="https://github.com/user-attachments/assets/2ba85112-a882-42b3-ad21-cf89133e0814" />
-
+<img width="1920" height="1392" alt="macOS Toshiba Portege Z30T-B" src="https://github.com/user-attachments/assets/c772f492-cf1e-49f4-9fbc-67d4dab55d50" />
 
 This repository contains a fully working EFI configuration for **Toshiba Portege Z30T-B** with **Intel Core i7-5500U (Broadwell-U)** and **Intel HD5500** graphics.  
 The goal is to provide a stable and compatible OpenCore setup for macOS Monterey.
