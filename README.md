@@ -1,6 +1,7 @@
 # Toshiba Portege Z30T-B Hackintosh (macOS OpenCore EFI)
 
-![Uploading macOS Toshiba Portege Z30T-B.png…]()
+<img width="1920" height="1392" alt="macOS Toshiba Portege Z30T-B" src="https://github.com/user-attachments/assets/2ba85112-a882-42b3-ad21-cf89133e0814" />
+
 
 This repository contains a fully working EFI configuration for **Toshiba Portege Z30T-B** with **Intel Core i7-5500U (Broadwell-U)** and **Intel HD5500** graphics.  
 The goal is to provide a stable and compatible OpenCore setup for macOS Monterey.
@@ -31,7 +32,7 @@ The goal is to provide a stable and compatible OpenCore setup for macOS Monterey
 - Sleep / wake / battery reporting
 - Touchpad & keyboard (VoodooPS2Controller)
 - Wi-Fi + Bluetooth (IntelWireless drivers)
-- Power management (SSDT-PLUG + XCPM)
+- Power management
 - USB ports (custom map under 15-port limit)
 - SD card reader (Sinetek-rtsx)
 - Trackpoint
@@ -41,7 +42,6 @@ The goal is to provide a stable and compatible OpenCore setup for macOS Monterey
 ## ❌ Not Working
 
 - **Fingerprint reader** (Validity/Elan – not supported by macOS)
-- Intel RST (must be disabled in BIOS)
 - Wake from fingerprint
 
 ---
@@ -76,7 +76,6 @@ ComboJack enables proper headset detection and mic functionality on Realtek code
 
 - `SSDT-EC-USBX` – EC and USB power injection  
 - `SSDT-GPRW` – fixes wake signal  
-- `SSDT-PLUG` – proper CPU power management  
 - `SSDT-PNLF` – backlight support  
 - `SSDT-SLPB` – sleep button fix  
 - `SSDT-OC-XOSI` – Windows ACPI compatibility  
@@ -96,8 +95,8 @@ ComboJack enables proper headset detection and mic functionality on Realtek code
 
 | Status | Details |
 |--------|----------|
-| Functionality | ~99% (fingerprint unsupported) |
-| Tested macOS | macOS 12 Monterey |
+| Functionality | ~99% |
+| Tested macOS | macOS 12.7.6 Monterey |
 | OpenCore version | 1.0.5 |
 | Last updated | October 2025 |
 
