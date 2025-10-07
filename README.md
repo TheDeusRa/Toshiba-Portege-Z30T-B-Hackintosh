@@ -59,6 +59,7 @@ As of 2025, macOS **Sonoma 14.x** runs successfully on the **Toshiba Portege Z30
 > Tested and confirmed functional configuration (EFI + OCLP).
 
 - To ignore macOS updates run Terminal:
+
 sudo killall -9 softwareupdated
 rm -rf ~/Library/Preferences/com.apple.preferences.softwareupdate.plist
 rm -rf ~/Library/Preferences/com.apple.SoftwareUpdate.plist
