@@ -3,7 +3,7 @@
 <img width="1920" height="1392" alt="macOS Toshiba Portege Z30TB" src="https://github.com/user-attachments/assets/4c0ec948-d5b6-4f20-b17b-3f67cfc845f1" />
 
 This repository contains a fully working EFI configuration for **Toshiba Portege Z30T-B** with **Intel Core i7-5500U (Broadwell-U)** and **Intel HD 5500** graphics.  
-The goal is to provide a stable and compatible OpenCore setup for macOS Monterey.
+The goal is to provide a stable and compatible OpenCore setup for macOS Monterey and Sonoma.
 
 ---
 
@@ -44,6 +44,19 @@ The goal is to provide a stable and compatible OpenCore setup for macOS Monterey
 - Wake from fingerprint
 
 ---
+
+### 🟢 macOS Sonoma confirmed working
+
+<img width="1600" height="900" alt="Snímek obrazovky 2025-10-07 v 5 26 04" src="https://github.com/user-attachments/assets/e809003b-61d2-4ccc-8fe6-e3a53c2869c7" />
+
+As of 2025, macOS **Sonoma 14.x** runs successfully on the **Toshiba Portege Z30-B (i7-5500U, Intel HD 5500)** using **OpenCore + OCLP 2.4.1**.
+
+- Full graphics acceleration after OCLP **Post-Install Root Patch** (Broadwell GPU)  
+- Wi-Fi works with `AirportItlwm.kext` (Sonoma 14.4 build)  
+- SMBIOS: `MacBookPro12,1`  
+- Upgrade from Monterey → Sonoma completed without issues  
+- System stable and fully usable  
+> Tested and confirmed functional configuration (EFI + OCLP).
 
 ### 🎧 Audio Jack & Scrolling Enhancements
 
