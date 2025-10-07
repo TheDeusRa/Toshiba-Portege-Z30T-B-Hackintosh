@@ -58,6 +58,20 @@ As of 2025, macOS **Sonoma 14.x** runs successfully on the **Toshiba Portege Z30
 - System stable and fully usable  
 > Tested and confirmed functional configuration (EFI + OCLP).
 
+- To ignore macOS updates run Terminal:
+sudo killall -9 softwareupdated
+rm -rf ~/Library/Preferences/com.apple.preferences.softwareupdate.plist
+rm -rf ~/Library/Preferences/com.apple.SoftwareUpdate.plist
+rm -rf ~/Library/Application\ Support/SoftwareUpdate
+
+defaults write com.apple.systempreferences AttentionPrefBundleIDs -array
+killall Dock
+
+sudo launchctl bootout system /System/Library/LaunchDaemons/com.apple.softwareupdated.plist
+sudo launchctl bootout gui/$(id -u) /System/Library/LaunchAgents/com.apple.SoftwareUpdateNotificationManager.plist
+
+Restart system.
+
 ### 🎧 Audio Jack & Scrolling Enhancements
 
 If you need the **3.5 mm headphone jack** to work correctly (auto-switch between speakers and headphones),  
