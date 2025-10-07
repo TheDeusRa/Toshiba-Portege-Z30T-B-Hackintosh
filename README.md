@@ -76,7 +76,7 @@ Restart system.
 ### 🎧 Audio Jack & Scrolling Enhancements
 
 If you need the **3.5 mm headphone jack** to work correctly (auto-switch between speakers and headphones),  
-install **[ComboJack](https://github.com/hackintosh-stuff/ComboJack)** after macOS installation.  
+install **[ComboJack]([https://github.com/macos86/ComboJack])** after macOS installation.  
 ComboJack enables proper headset detection and microphone support on Realtek audio codecs.
 
 For smoother and more natural **scrolling behavior**, you can also install  
