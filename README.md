@@ -62,7 +62,6 @@ As of 2025, macOS **Sonoma 14.x** runs successfully on the **Toshiba Portege Z30
 
 - **Fingerprint reader** (Validity/Elan – not supported by macOS)
 - Wake from fingerprint
-- Bluetooth
 - iServices (iMessage and FaceTime) - Switch kext
 
 ### 🎧 Audio Jack & Scrolling Enhancements
