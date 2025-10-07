@@ -53,26 +53,17 @@ As of 2025, macOS **Sonoma 14.x** runs successfully on the **Toshiba Portege Z30
 
 - Full graphics acceleration after OCLP **Post-Install Root Patch** (Broadwell GPU)  
 - Wi-Fi works with `AirportItlwm.kext` (Sonoma 14.4 build)  
-- SMBIOS: `MacBookPro12,1`  
+- SMBIOS: `MacBookPro15,1`  
 - Upgrade from Monterey → Sonoma completed without issues  
 - System stable and fully usable  
 > Tested and confirmed functional configuration (EFI + OCLP).
 
-- To ignore macOS updates run Terminal:
+## ❌ Not Working
 
-Open a terminal session. (Command+Space -> Spotlight -> terminal.app)
-Paste the following commands into the terminal, it may need your password for the sudo permission to write content to system host.
-sudo tee -a /etc/hosts <<EOF
-127.0.0.1  swdist.apple.com
-127.0.0.1  swscan.apple.com
-127.0.0.1  swcdn.apple.com
-127.0.0.1  xp.apple.com
-127.0.0.1  gdmf.apple.com
-127.0.0.1  mesu.apple.com
-127.0.0.1  updates.cdn-apple.com
-EOF
-Enjoy your Mac without any update notifications!
-
+- **Fingerprint reader** (Validity/Elan – not supported by macOS)
+- Wake from fingerprint
+- Bluetooth
+- iServices (iMessage and FaceTime) - Switch kext
 
 ### 🎧 Audio Jack & Scrolling Enhancements
 
