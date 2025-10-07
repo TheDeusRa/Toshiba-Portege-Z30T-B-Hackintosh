@@ -60,18 +60,19 @@ As of 2025, macOS **Sonoma 14.x** runs successfully on the **Toshiba Portege Z30
 
 - To ignore macOS updates run Terminal:
 
-sudo killall -9 softwareupdated
-rm -rf ~/Library/Preferences/com.apple.preferences.softwareupdate.plist
-rm -rf ~/Library/Preferences/com.apple.SoftwareUpdate.plist
-rm -rf ~/Library/Application\ Support/SoftwareUpdate
+Open a terminal session. (Command+Space -> Spotlight -> terminal.app)
+Paste the following commands into the terminal, it may need your password for the sudo permission to write content to system host.
+sudo tee -a /etc/hosts <<EOF
+127.0.0.1  swdist.apple.com
+127.0.0.1  swscan.apple.com
+127.0.0.1  swcdn.apple.com
+127.0.0.1  xp.apple.com
+127.0.0.1  gdmf.apple.com
+127.0.0.1  mesu.apple.com
+127.0.0.1  updates.cdn-apple.com
+EOF
+Enjoy your Mac without any update notifications!
 
-defaults write com.apple.systempreferences AttentionPrefBundleIDs -array
-killall Dock
-
-sudo launchctl bootout system /System/Library/LaunchDaemons/com.apple.softwareupdated.plist
-sudo launchctl bootout gui/$(id -u) /System/Library/LaunchAgents/com.apple.SoftwareUpdateNotificationManager.plist
-
-Restart system.
 
 ### 🎧 Audio Jack & Scrolling Enhancements
 
