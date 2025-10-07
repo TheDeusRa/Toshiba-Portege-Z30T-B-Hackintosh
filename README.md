@@ -110,7 +110,7 @@ For smoother and more natural **scrolling behavior**, you can also install
 
 | Status | Details |
 |--------|----------|
-| macOS Compatibility | ✅ Monterey (12.x), ⚙️ Working on Sonoma (14.x) |
+| macOS Compatibility | ✅ Monterey (12.x), ✅ Sonoma (14.x) |
 | Stability | ✅ Daily-driver ready |
 | Fingerprint Reader | ❌ Not supported |
 | Audio Jack | ✅ With ComboJack |
